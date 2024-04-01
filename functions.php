@@ -1,7 +1,7 @@
 <?php
 
-add_action( 'wp_enqueue_scripts', 'hariko_blog_enqueue_styles' );
-function hariko_blog_enqueue_styles() {
+add_action( 'wp_enqueue_scripts', 'hariko_business_enqueue_styles' );
+function hariko_business_enqueue_styles() {
 	wp_enqueue_style(
 		'hariko-parent-style',
 		get_parent_theme_file_uri( 'style.css' )
@@ -13,37 +13,37 @@ function hariko_blog_enqueue_styles() {
 	);
 	
 	wp_enqueue_style(
-		'hariko_blog-style',
+		'hariko_business-style',
 		get_theme_file_uri( 'assets/css/style.css' )
 	);
 
-	wp_enqueue_block_style( 'core/search', 'hariko_blog-block-search' );
+	wp_enqueue_block_style( 'core/search', 'hariko_business-block-search' );
 	wp_enqueue_style( 
-		'hariko_blog-block-search', 
+		'hariko_business-block-search', 
 		get_theme_file_uri( "assets/blocks/core-search.css" )
 	);
 
-	wp_enqueue_block_style( 'core/navigation', 'hariko_blog-block-navigation' );
+	wp_enqueue_block_style( 'core/navigation', 'hariko_business-block-navigation' );
 	wp_enqueue_style( 
-		'hariko_blog-block-navigation', 
+		'hariko_business-block-navigation', 
 		get_theme_file_uri( "assets/blocks/core-navigation.css" )
 	);
 
-	wp_enqueue_block_style( 'core/details', 'hariko_blog-block-details' );
+	wp_enqueue_block_style( 'core/details', 'hariko_business-block-details' );
 	wp_enqueue_style( 
-		'hariko_blog-block-details', 
+		'hariko_business-block-details', 
 		get_theme_file_uri( "assets/blocks/core-details.css" )
 	);
 
-	wp_enqueue_block_style( 'core/table', 'hariko_blog-block-table' );
+	wp_enqueue_block_style( 'core/table', 'hariko_business-block-table' );
 	wp_enqueue_style( 
-		'hariko_blog-block-table', 
+		'hariko_business-block-table', 
 		get_theme_file_uri( "assets/blocks/core-table.css" )
 	);
 
-	wp_enqueue_block_style( 'core/heading', 'hariko_blog-block-heading' );
+	wp_enqueue_block_style( 'core/heading', 'hariko_business-block-heading' );
 	wp_enqueue_style( 
-		'hariko_blog-block-heading', 
+		'hariko_business-block-heading', 
 		get_theme_file_uri( "assets/blocks/core-heading.css" )
 	);
 }

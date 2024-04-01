@@ -1,4 +1,4 @@
-=== Hariko Blog ===
+=== Hariko Business ===
 Contributors: 
 Requires at least: 6.4
 Tested up to: 6.4
@@ -8,7 +8,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Hariko Blog is a child theme that uses the Hariko theme as its parent.
+Hariko Business is a child theme that uses the Hariko theme as its parent.
 
 == Changelog ==
 
@@ -17,8 +17,8 @@ Hariko Blog is a child theme that uses the Hariko theme as its parent.
 
 == Copyright ==
 
-Hariko Blog WordPress Theme, (C) 2024
-Hariko Blog is distributed under the terms of the GNU GPL.
+Hariko Business WordPress Theme, (C) 2024
+Hariko Business is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

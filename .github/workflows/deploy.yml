@@ -22,6 +22,6 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }} # FTPのユーザー名を設定
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }} # FTPのパスワードを設定
           LOCAL_DIR: ./ # どのディレクトリのデータをアップロードするか
-          REMOTE_DIR: /hariko-blog/wp-content/themes/hariko_blog/ # リモートのどのディレクトリにアップロードするか
+          REMOTE_DIR: /hariko-business/wp-content/themes/hariko_business/ # リモートのどのディレクトリにアップロードするか
           ARGS: --delete --parallel=10 --exclude-glob=.git*/**
             --exclude-glob=.git** --exclude-glob=.htaccess # ARGSでparallel(xFTPサーバーへの同時接続数)を設定する

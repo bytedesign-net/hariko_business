@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: front-page
- * Slug: hariko_blog/front-page
+ * Slug: hariko_business/front-page
  * Categories: hidden
  * Inserter: no
  */

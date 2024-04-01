@@ -13,7 +13,7 @@
 <div class="wp-block-group alignwide"><!-- wp:site-title {"level":0,"textAlign":"center","align":"center","style":{"elements":{"link":{":hover":{"color":{"text":"var:preset|color|base-2"}}}}},"fontSize":"xl"} /-->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><a href="/">Hariko Blog</a> theme by <a rel="noreferrer noopener" href="https://bytedesign.net">BYTE DESIGN</a>. Powered by <a rel="noreferrer noopener" href="https://wordpress.org/" target="_blank">WordPress</a>.</p>
+<p class="has-text-align-center"><a href="/">Hariko Business</a> theme by <a rel="noreferrer noopener" href="https://bytedesign.net">BYTE DESIGN</a>. Powered by <a rel="noreferrer noopener" href="https://wordpress.org/" target="_blank">WordPress</a>.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
