@@ -135,6 +135,6 @@
     }
   },
   "editorStyle": "wp-block-gallery-editor",
-  "style": ["wp-block-gallery", "file:./swiper/swiper.css"],
-  "script": "file:./swiper/swiper.js"
+  "style": ["wp-block-gallery", "file:../swiper/swiper.css"],
+  "script": "file:../swiper/swiper.js"
 }
