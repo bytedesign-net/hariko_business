@@ -1,0 +1,36 @@
+details {
+  & summary {
+    font-weight: 700;
+    color: var(--wp--preset--color--dark-gray);
+    box-sizing: border-box;
+    position: relative;
+    &::marker {
+      content: "";
+    }
+    &::after {
+      content: "\e5cc";
+      font-family: "Material Symbols Outlined";
+      font-size: 1.5rem;
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
+  & > * {
+    border: solid 1px var(--wp--preset--color--light-gray);
+    margin: 0;
+    padding: var(--wp--preset--spacing--m);
+  }
+  & > *:not(summary) {
+    border-top: none;
+  }
+  &[open] summary {
+    background-color: var(--wp--preset--color--base);
+    border-width: 1px;
+    color: #000000;
+    &::after {
+      transform: translateY(-50%) rotate(270deg);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+main .wp-block-table {
+  thead {
+    background-color: var(--wp--preset--color--base);
+    border-bottom-width: 1px;
+  }
+  td,
+  th {
+    border-color: var(--wp--preset--color--light-gray);
+  }
+}

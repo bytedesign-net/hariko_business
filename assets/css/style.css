@@ -1,0 +1,9 @@
+.wp-block-navigation__responsive-container.is-menu-open {
+  padding: 20px;
+}
+
+header h1 a {
+  &:hover {
+    text-decoration: none;
+  }
+}
