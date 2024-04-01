@@ -408,6 +408,9 @@
       "name": "posts"
     }
   ],
-  "script": "./swiper/swiper.js",
-  "style": "./swiper/swiper.css"
+
+  "enqueue_assets": {
+    "scripts": ["../swiper/swiper.js"],
+    "styles": ["../swiper/swiper.css"]
+  }
 }
