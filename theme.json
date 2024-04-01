@@ -408,6 +408,6 @@
       "name": "posts"
     }
   ],
-  "script": "file:./swiper/swiper.js",
-  "style": "file:./swiper/swiper.css"
+  "script": "./swiper/swiper.js",
+  "style": "./swiper/swiper.css"
 }
