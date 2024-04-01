@@ -407,5 +407,7 @@
       "area": "page",
       "name": "posts"
     }
-  ]
+  ],
+  "script": "file:./swiper/swiper.js",
+  "style": "file:./swiper/swiper.css"
 }
