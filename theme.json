@@ -407,10 +407,5 @@
       "area": "page",
       "name": "posts"
     }
-  ],
-
-  "enqueue_assets": {
-    "scripts": ["../swiper/swiper.js"],
-    "styles": ["../swiper/swiper.css"]
-  }
+  ]
 }
