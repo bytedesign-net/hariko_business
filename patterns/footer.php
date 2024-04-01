@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Footer with colophon, 4 columns
- * Slug: hariko/footer
+ * Slug: hariko_business/footer
  * Categories: footer
  * Block Types: core/template-part/footer
  */
