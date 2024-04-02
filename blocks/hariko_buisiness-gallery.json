@@ -134,7 +134,7 @@
       }
     }
   },
-  "viewScript": "file:../js/vendor/swiper/swiper.js",
+  "viewScript": "file:../assets/js/vendor/swiper/swiper.js",
   "editorStyle": "wp-block-gallery-editor",
-  "viewStyle": "file:../css/vendor/swiper/swiper.css"
+  "viewStyle": "file:../assets/css/vendor/swiper/swiper.css"
 }
