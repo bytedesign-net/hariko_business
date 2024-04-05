@@ -1,6 +1,6 @@
 <?php
 
-require_once(get_stylesheet_directory() . '/vendor/tgmpa/tgmpa-configuration.php');
+require_once get_stylesheet_directory() . '/vendor/tgmpa/tgmpa-configuration.php';
 
 add_action( 'wp_enqueue_scripts', 'hariko_business_enqueue_styles' );
 function hariko_business_enqueue_styles() {
