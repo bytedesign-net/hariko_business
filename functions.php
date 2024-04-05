@@ -1,5 +1,4 @@
 <?php
-
 require_once get_stylesheet_directory() . '/vendor/tgmpa/tgmpa-configuration.php';
 /*
 $theme_root_dir = get_stylesheet_directory();
