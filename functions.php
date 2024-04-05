@@ -1,6 +1,6 @@
 <?php
 
-require_once(get_theme_file_uri( 'vendor/tgmpa/tgmpa-configuration.php' ));
+require_once(trailingslashit(get_template_directory_uri()) . 'vendor/tgmpa/tgmpa-configuration.php');
 
 
 add_action( 'wp_enqueue_scripts', 'hariko_business_enqueue_styles' );
