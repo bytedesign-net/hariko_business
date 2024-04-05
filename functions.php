@@ -1,5 +1,7 @@
 <?php
 
+require_once(get_template_directory() . 'vendor/tgmpa/tgmpa-configuration.php');
+
 add_action( 'wp_enqueue_scripts', 'hariko_business_enqueue_styles' );
 function hariko_business_enqueue_styles() {
 	wp_enqueue_style(
