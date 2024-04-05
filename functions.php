@@ -1,9 +1,9 @@
 <?php
 
-// テーマのルートディレクトリパスを取得
-$theme_root_dir = get_template_directory();
+require_once get_stylesheet_directory() . '/vendor/tgmpa/tgmpa-configuration.php';
 
-require_once $theme_root_dir . '/vendor/tgmpa/tgmpa-configuration.php';
+// テーマのルートディレクトリパスを取得
+$theme_root_dir = get_stylesheet_directory();
 
 // vendor/tgmpa/languages ディレクトリパスを取得
 $languages_dir = $theme_root_dir . '/vendor/tgmpa/languages';
