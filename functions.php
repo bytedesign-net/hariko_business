@@ -1,7 +1,15 @@
 <?php
 
-require_once get_stylesheet_directory() . '/vendor/tgmpa/tgmpa-configuration.php';
-load_theme_textdomain( 'hariko_business', get_template_directory() . '/vendor/tgmpa/languages' );
+// テーマのルートディレクトリパスを取得
+$theme_root_dir = get_template_directory();
+
+require_once $theme_root_dir . '/vendor/tgmpa/tgmpa-configuration.php';
+
+// vendor/tgmpa/languages ディレクトリパスを取得
+$languages_dir = $theme_root_dir . '/vendor/tgmpa/languages';
+
+// テキストドメインを読み込む
+load_theme_textdomain( 'hariko_business', $languages_dir );
 
 add_action( 'wp_enqueue_scripts', 'hariko_business_enqueue_styles' );
 function hariko_business_enqueue_styles() {
