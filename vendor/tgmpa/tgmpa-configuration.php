@@ -89,6 +89,7 @@ function my_theme_register_required_plugins() {
 	 *
 	 * Only uncomment the strings in the config array if you want to customize the strings.
 	 */
+	/*
 	$config = array(
 		'id'           => 'tgmpa',                 // Unique ID for hashing notices for multiple instances of TGMPA.
 		'default_path' => '',                      // Default absolute path to bundled plugins.
@@ -100,8 +101,6 @@ function my_theme_register_required_plugins() {
 		'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
 		'is_automatic' => false,                   // Automatically activate plugins after installation or not.
 		'message'      => '',                      // Message to output right before the plugins table.
-
-		/*
 		'strings'      => array(
 			'page_title'                      => __( 'Install Required Plugins', 'theme-slug' ),
 			'menu_title'                      => __( 'Install Plugins', 'theme-slug' ),
@@ -176,8 +175,7 @@ function my_theme_register_required_plugins() {
 
 			'nag_type'                        => '', // Determines admin notice type - can only be one of the typical WP notice classes, such as 'updated', 'update-nag', 'notice-warning', 'notice-info' or 'error'. Some of which may not work as expected in older WP versions.
 		),
-		*/
 	);
-
+	*/
 	tgmpa( $plugins, $config );
 }
