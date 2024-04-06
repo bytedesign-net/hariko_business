@@ -1,14 +1,9 @@
 <?php
+
+// TGM translation
+load_theme_textdomain('tgmpa', get_template_directory() . '/vendor/tgmpa/languages');
+
 require_once get_stylesheet_directory() . '/vendor/tgmpa/tgmpa-configuration.php';
-/*
-$theme_root_dir = get_stylesheet_directory();
-
-
-$languages_dir = $theme_root_dir . '/vendor/tgmpa/languages';
-
-
-load_theme_textdomain( 'hariko_business', $languages_dir );
-*/
 
 add_action( 'wp_enqueue_scripts', 'hariko_business_enqueue_styles' );
 function hariko_business_enqueue_styles() {
