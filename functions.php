@@ -1,7 +1,7 @@
 <?php
 
 // TGM translation
-load_theme_textdomain('hariko_business', get_template_directory() . '/vendor/tgmpa/languages');
+load_theme_textdomain( 'tgmpa', get_template_directory() . '/vendor/tgmpa/languages');
 
 require_once get_stylesheet_directory() . '/vendor/tgmpa/tgmpa-configuration.php';
 
