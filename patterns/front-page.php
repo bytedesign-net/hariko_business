@@ -10,10 +10,6 @@
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"right":"0","left":"0"}}},"backgroundColor":"base-2","layout":{"type":"default"}} -->
 <main class="wp-block-group has-base-2-background-color has-background" style="padding-right:0;padding-left:0">
-    <!-- wp:group {"layout":{"type":"constrained"}} -->
-    <div class="wp-block-group"><!-- wp:post-title {"level":1,"align":"wide"} /--></div>
-    <!-- /wp:group -->
-
     <!-- wp:group -->
     <div class="wp-block-group"><!-- wp:post-content {"layout":{"type":"default"}} /--></div>
     <!-- /wp:group -->
