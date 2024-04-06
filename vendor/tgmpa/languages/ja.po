@@ -57,7 +57,7 @@ msgstr[0] "このテーマは次のプラグインが必要です: %1$s"
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
-msgstr[0] "このテーマは次のプラグインを推奨します: %1$s"
+msgstr[0] "このテーマは次のプラグインを推奨しています: %1$s"
 
 #. translators: 1: plugin name(s).
 #: class-tgm-plugin-activation.php:355
