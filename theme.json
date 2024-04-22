@@ -407,5 +407,12 @@
       "name": "posts",
       "title": "投稿一覧"
     }
+  ],
+  "customTemplates": [
+    {
+      "name": "single-with-sidebar",
+      "postTypes": ["post"],
+      "title": "投稿ページサイドバー有"
+    }
   ]
 }
