@@ -1,8 +1,8 @@
 === Hariko Business ===
 Contributors: 
-Requires at least: 6.4
-Tested up to: 6.4
-Requires PHP: 8.1
+Requires at least: 6.5.2
+Tested up to: 6.5.2
+Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,6 +11,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Hariko Business is a child theme that uses the Hariko theme as its parent.
 
 == Changelog ==
+= 1.0.4 =
+* Parent theme update hooks
+
 = 1.0.3 =
 * Fixed issue with page-fullwidth template not loading.
 

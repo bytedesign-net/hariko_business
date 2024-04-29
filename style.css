@@ -4,13 +4,13 @@ Theme URI:
 Author: BYTE DESIGN
 Author URI: https://blog.bytedesign.net/
 Description: 
-Requires at least: 6.4
-Tested up to: 6.4
-Requires PHP: 8.1
-Version: 1.0.2
+Requires at least: 6.5.2
+Tested up to: 6.5.2
+Requires PHP: 7.0
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Template: hariko-1.0.3
+Template: hariko
 Text Domain: hariko_business
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing
 */
