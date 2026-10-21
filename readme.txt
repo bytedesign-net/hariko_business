@@ -1,16 +1,21 @@
 === Hariko Business ===
 Contributors: 
 Requires at least: 6.5.2
-Tested up to: 6.5.2
+Tested up to: 7.1.3
 Requires PHP: 7.0
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Hariko Business is a child theme that uses the Hariko theme as its parent.
+Hariko Business is a child theme that uses the Hariko theme as its parent. Slider content requires the WP Swiper plugin to be installed and activated.
 
 == Changelog ==
+= 1.0.5 =
+* Updated theme.json for WordPress 7.1 compatibility.
+* Replaced the bundled TGMPA library with a built-in WP Swiper installation, activation, and update notice.
+* Fixed stylesheet loading and the skip-link target.
+
 = 1.0.4 =
 * Parent theme update hooks
 
@@ -44,6 +49,3 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOS
 NotoSansJP is SIL Open Font License, Version 1.1 - https://openfontlicense.org
 NotoSerifJP is SIL Open Font License, Version 1.1 - https://openfontlicense.org
 Material Design Icons is Apache License Version 2.0 - https://www.apache.org/licenses/LICENSE-2.0.txt
-
-=== Plugin ===
-TGM Plugin Activation is GPL Version 2.0 - http://www.gnu.org/licenses/gpl-2.0.html
