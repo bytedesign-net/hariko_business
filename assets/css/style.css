@@ -7,3 +7,7 @@ header h1 a {
     text-decoration: none;
   }
 }
+
+.home footer {
+  margin-top: 0;
+}
