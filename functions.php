@@ -1,5 +1,9 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 /**
  * Returns the main file for an installed WP Swiper plugin.
  *
@@ -83,54 +87,56 @@ function hariko_business_wp_swiper_admin_notice() {
 }
 add_action( 'admin_notices', 'hariko_business_wp_swiper_admin_notice' );
 
-add_action( 'wp_enqueue_scripts', 'hariko_business_enqueue_styles' );
+/**
+ * Enqueue child and parent theme styles.
+ *
+ * The parent theme (Hariko 1.0.13+) registers its stylesheet with the
+ * handle "hariko-theme" pointing to assets/css/theme.css. The parent
+ * stylesheet is loaded first and the child theme stylesheet depends on
+ * it so that child styles always override the parent styles.
+ */
+add_action( 'wp_enqueue_scripts', 'hariko_business_enqueue_styles', 5 );
 function hariko_business_enqueue_styles() {
-	wp_enqueue_style(
-		'hariko-parent-style',
-		get_parent_theme_file_uri( 'style.css' )
-	);
+	$parent_handle = 'hariko-theme';
+	$parent_theme  = 'hariko';
+	$parent_dir    = get_template_directory();
 
-	wp_enqueue_style(
-		'hariko-parent-assets',
-		get_parent_theme_file_uri( 'assets/css/style.css' ),
-		array( 'hariko-parent-style' )
-	);
-	
+	// Enqueue the parent theme stylesheet first (handle: hariko-theme).
+	if ( ! wp_style_is( $parent_handle, 'enqueued' ) ) {
+		wp_register_style(
+			$parent_handle,
+			get_theme_file_uri( $parent_dir . '/assets/css/theme.css' ),
+			array(),
+			wp_get_theme( $parent_theme )->get( 'Version' )
+		);
+		wp_enqueue_style( $parent_handle );
+	}
+
+	// Child theme stylesheet.
 	wp_enqueue_style(
 		'hariko_business-style',
 		get_stylesheet_directory_uri() . '/assets/css/style.css',
-		array( 'hariko-parent-assets' )
+		array( $parent_handle ),
+		wp_get_theme()->get( 'Version' )
 	);
 
-	wp_enqueue_block_style( 'core/search', 'hariko_business-block-search' );
-	wp_enqueue_style( 
-		'hariko_business-block-search', 
-		get_theme_file_uri( "assets/blocks/core-search.css" )
+	// Block styles.
+	$block_styles = array(
+		'hariko_business-block-search'     => 'assets/blocks/core-search.css',
+		'hariko_business-block-navigation' => 'assets/blocks/core-navigation.css',
+		'hariko_business-block-details'    => 'assets/blocks/core-details.css',
+		'hariko_business-block-table'      => 'assets/blocks/core-table.css',
+		'hariko_business-block-heading'    => 'assets/blocks/core-heading.css',
 	);
 
-	wp_enqueue_block_style( 'core/navigation', 'hariko_business-block-navigation' );
-	wp_enqueue_style( 
-		'hariko_business-block-navigation', 
-		get_theme_file_uri( "assets/blocks/core-navigation.css" )
-	);
-
-	wp_enqueue_block_style( 'core/details', 'hariko_business-block-details' );
-	wp_enqueue_style( 
-		'hariko_business-block-details', 
-		get_theme_file_uri( "assets/blocks/core-details.css" )
-	);
-
-	wp_enqueue_block_style( 'core/table', 'hariko_business-block-table' );
-	wp_enqueue_style( 
-		'hariko_business-block-table', 
-		get_theme_file_uri( "assets/blocks/core-table.css" )
-	);
-
-	wp_enqueue_block_style( 'core/heading', 'hariko_business-block-heading' );
-	wp_enqueue_style( 
-		'hariko_business-block-heading', 
-		get_theme_file_uri( "assets/blocks/core-heading.css" )
-	);
+	foreach ( $block_styles as $handle => $src ) {
+		wp_enqueue_style(
+			$handle,
+			get_stylesheet_directory_uri() . '/' . $src,
+			array( $parent_handle ),
+			wp_get_theme()->get( 'Version' )
+		);
+	}
 }
 
 // フロント側のスタイル
@@ -138,5 +144,5 @@ add_action( 'after_setup_theme', 'hariko_business_support' );
 function hariko_business_support() {
 	add_theme_support( 'wp-block-styles' );
 	add_theme_support( 'editor-styles' );
-	add_editor_style( 'style.css' );
+	add_editor_style( 'editor-style.css' );
 }

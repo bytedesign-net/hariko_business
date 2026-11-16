@@ -4,13 +4,25 @@ Theme URI:
 Author: BYTE DESIGN
 Author URI: https://blog.bytedesign.net/
 Description: 
-Requires at least: 6.5.2
+Requires at least: 6.9
 Tested up to: 7.1.3
-Requires PHP: 7.0
-Version: 1.0.5
+Requires PHP: 8.1
+Version: 1.0.6
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Template: hariko
 Text Domain: hariko_business
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing
 */
+
+/*
+ * Changelog
+ * = 1.0.6
+ * - 親テーマHariko 1.0.13に対応
+ * - フォントサイズ・間隔のプリセットを親テーマと同じスラグ（2-xl〜6-xl）に変更
+ * - 親テーマのスタイルを先に読み込み、子テーマのスタイルを後に読み込むよう変更
+ * - 親テーマが参照するsans-serif・serifのフォントファミリを追加
+ * - サイドバーのテンプレートパートを親テーマのものを使用するように変更
+ * - 存在しないパターンを参照していたindexテンプレートを再構築
+ * - エディタスタイルの読み込み方法を修正（editor-style.css）
+ */
